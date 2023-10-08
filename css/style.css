@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800&display=swap");
+
+:root{
+    --primary-color: #23A6F0;
+
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat";
+  background-color: #F0F0F0;
+}
+
+header {
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/hero.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  height: 60px;
+  width: 100%;
+  max-width: 100%;
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 100;
+   background-color: transparent;
+   font-weight: 300;
+}
+
+.navbar>h2{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.navbar > ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  list-style: none;
+  font-size: 14px;
+}
+
+.nav-end {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  /* font-weight: 300; */
+}
+.nav-end>h5{
+    font-weight: 300;
+    font-size: 15px;
+}
+.member-btn{
+    background: var(--primary-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.hero-content > h1 {
+  font-size: 50px;
+  font-weight: 500;
+  text-align: center;
+  color: white;
+  margin-top: 20px;
+}
+.hero-content > p {
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    color: white;
+    margin: 20px 0;
+  }
+
+.hero-btn{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+    
+}
+.hero-btn >button{
+    background: var(--primary-color);
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: none;
+    margin: 0 20px;
+    color: white;
+    font-size: 18px;
+
+}
+
+
+.hero-btn >p{
+    
+    padding: 10px 15px;
+    border-radius: 30px;
+    border: none;
+    outline: 1px solid white;
+    color: white;
+    font-size: 18px;
+}
+
+.top-cards{
+  margin-top: -80px;
+  
+  width: 100%;
+  /* height: 300px; */
+  padding-bottom: 50px;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+
+.peace-card{
+  background-color: white;
+  padding: 40px;
+  width: 350px;
+  z-index: 100;
+  box-shadow: 0 15px 35px #aaaaaa40;
+}
+
+.peace-card>img{
+  margin: 0 30px;
+}
+
+.peace-card>h2{
+  margin: 20px 20px 20px 0;
+}
+
+.life-card{
+  background-color: white;
+  padding: 40px;
+  width: 350px;
+  z-index: 100;
+  box-shadow: 0 15px 35px #aaaaaa40;
+}
+.life-card>img{
+  margin: 0 30px;
+}
+.life-card>h2{
+  margin: 20px 20px 20px 0;
+}
+.satisfaction-card{
+  background: var(--primary-color);
+  padding: 40px;
+  width: 350px;
+  z-index: 100;
+  color: white;
+  box-shadow: 0 15px 35px #aaaaaa40;
+}
+.satisfaction-card>img{
+  margin: 0 30px;
+}
+.satisfaction-card>h2{
+  margin: 20px 20px 20px 0;
+}
+
+.icons-cards{
+  /* padding-top: 40px; */
+  background-color: white;
+  width: 100%;
+  height: 400px;
+   display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.recordbook-card{
+  /* background-color: rgb(219, 98, 98); */
+  padding: 40px;
+  width: 350px;
+  text-align: center;
+}
+
+.bookmark-card{
+  /* background-color: rgb(219, 98, 98); */
+  padding: 40px;
+  width: 350px;
+  text-align: center;
+}
+
+.user-iconcard{
+  /* background-color: rgb(219, 98, 98); */
+  padding: 40px;
+  width: 350px;
+  text-align: center;
+}
