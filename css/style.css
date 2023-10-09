@@ -408,3 +408,62 @@ border-radius: 5px;
 .premium>p{
   font-size: 15px;
 }
+
+.map{
+  display: flex;
+  justify-content: center;
+  padding-top: 70px;
+  /* align-items: center; */
+  background-color: rgb(37,43,66);
+  color: white;
+  height: 550px;
+}
+.map-location>h2{
+  margin-bottom: 20px;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.map-location>p{
+  font-weight: 300;
+}
+
+.appointment{
+  display: flex;
+  justify-content: center;
+  margin-top: -200px;
+}
+
+.form{
+  background-color: white;
+  padding: 30px;
+  width: 30%;
+  /* text-align: center; */
+}
+
+.form>h4{
+  text-align: center;
+}
+
+.inputholder{
+  display: flex;
+  flex-direction: column;
+  /* gap: 2px; */
+  margin: 20px 0;
+}
+
+.inputholder>input{
+  border: none;
+  outline: none;
+  background-color: whitesmoke;
+  padding: 10px;
+}
+
+.inputholder>button{
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 15px 0;
+}
