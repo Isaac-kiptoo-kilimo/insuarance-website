@@ -513,23 +513,33 @@ border-radius: 5px;
 }
 footer{
   background-color: white;
+  width: 100%;
   padding: 20px;
+  font-size: 18px;
+  font-weight: 300;
 }
 .footer-top{
   display: flex;
   justify-content: space-around;
-  margin: 20px 10px;
+  margin: 20px 0px 0px 10px;
+  
 }
 
 .get-intouch{
   display: flex;
   flex-direction: column;
+  gap: 8px;
 }
 
 .footer-bottom{
   display: flex;
   justify-content: space-between;
-  margin: 0 15px;
   padding: 10px 20px;
+}
+.list{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
