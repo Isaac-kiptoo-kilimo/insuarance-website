@@ -10,13 +10,12 @@
   box-sizing: border-box;
 }
 
-body{
+body {
   font-family: "Montserrat";
   background-color: #f0f0f0;
- 
 }
 
-.main{
+.main {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -86,7 +85,7 @@ header {
   padding: 10px 20px;
   border-radius: 5px;
 }
-.hero-content{
+.hero-content {
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -143,23 +142,50 @@ header {
   width: 100%;
   padding-bottom: 50px;
   gap: 40px;
-  
 }
-.user-card{
+
+/* start of dummy css */
+
+.user-card {
+  position: relative;
   background-color: white;
   padding: 40px;
   width: 350px;
-  /* z-index: 100; */
   box-shadow: 0 15px 35px #aaaaaa40;
 }
-.user-card:hover{
-  background: var(--primary-color);
-  padding: 40px;
-  width: 350px;
-  /* z-index: 100; */
+
+.default-image {
+  background-color: white;
+  transition: opacity;
+}
+
+
+.hover-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity;
+}
+
+
+.user-card:hover .hover-image {
+  opacity: 1;
   color: white;
+  background: var(--primary-color);
+  padding: 37px 40px;
+  width: 350px;
   box-shadow: 0 15px 35px #aaaaaa40;
   cursor: pointer;
+}
+
+.user-card:hover .default-image {
+  opacity: 0;
+}
+/* end of dummy css */
+
+.peace-img2 {
+  display: none;
 }
 
 .peace-card > img {
@@ -172,7 +198,6 @@ header {
 
 .life-card > img {
   margin: 0 30px;
- 
 }
 .life-card > h2 {
   margin: 20px 20px 20px 0;
@@ -180,7 +205,7 @@ header {
 
 .satisfaction-card > img {
   margin: 0 30px;
-   /* background-color: #23a6f0; */
+  /* background-color: #23a6f0; */
 }
 .satisfaction-card > h2 {
   margin: 20px 20px 20px 0;
@@ -192,7 +217,7 @@ header {
   background-color: white;
   width: 100%;
   height: 400px;
-  
+
   gap: 40px;
   justify-content: center;
   flex-wrap: wrap;
@@ -226,17 +251,15 @@ header {
   width: 100vw;
   text-align: center;
   padding: 50px 0;
- 
 }
 .industry > h2 {
   margin: 20px 0;
 }
 
-.review-row{
+.review-row {
   display: flex;
   flex-wrap: wrap;
   width: 100vw;
-
 }
 
 .reviews {
@@ -349,14 +372,16 @@ header {
   font-weight: 500;
 }
 
-.offers{
+.offers {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 20px;
   padding: 20px;
 }
-.free,.standard,.premium{
+.free,
+.standard,
+.premium {
   border: 1px solid var(--primary-color);
   width: 300px;
   display: flex;
@@ -372,11 +397,11 @@ header {
   font-size: 15px;
   font-weight: 300;
 }
-.amount{
+.amount {
   color: var(--primary-color);
 }
 
-.amount>h2{
+.amount > h2 {
   font-size: 40px;
   font-weight: 500;
 }
@@ -385,45 +410,10 @@ header {
   font-weight: 300;
 }
 
-.free>p{
+.free > p {
   font-size: 15px;
 }
-.free>button{
-width: 100%;
-background-color: var(--primary-color);
-color: white;
-padding: 10px;
-border: none;
-outline: none;
-border-radius: 5px;
-}
-
-
-  .premium>button{
-    width: 100%;
-    background-color: var(--primary-color);
-    color: white;
-    padding: 10px;
-    border: none;
-    outline: none;
-    border-radius: 5px;
-    }
-.package>p{
-  display: flex;
-  gap: 10px;
-  margin-top: 10px;
-}
-.standard{
-  background-color: #252B42;
-  color: white;
-  padding: 20px;
-  height: 550px;
-}
-
-.standard>p{
-  font-size: 15px;
-}
-.standard>button{
+.free > button {
   width: 100%;
   background-color: var(--primary-color);
   color: white;
@@ -431,61 +421,95 @@ border-radius: 5px;
   border: none;
   outline: none;
   border-radius: 5px;
-  }
+}
 
-.premium>p{
+.premium > button {
+  width: 100%;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+.package > p {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+.standard {
+  background-color: #252b42;
+  color: white;
+  padding: 20px;
+  height: 550px;
+}
+
+.standard > p {
+  font-size: 15px;
+}
+.standard > button {
+  width: 100%;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+.premium > p {
   font-size: 15px;
 }
 
-.map{
+.map {
   display: flex;
   justify-content: center;
   padding-top: 70px;
-  background-color: rgb(37,43,66);
+  background-color: rgb(37, 43, 66);
   color: white;
   height: 550px;
 }
-.map-location>h2{
+.map-location > h2 {
   margin-bottom: 20px;
   font-size: 40px;
   font-weight: 500;
 }
 
-.map-location>p{
+.map-location > p {
   font-weight: 300;
 }
 
-.appointment{
+.appointment {
   display: flex;
   justify-content: center;
   margin-top: -200px;
 }
 
-.form{
+.form {
   background-color: white;
   padding: 20px 20px 0px 20px;
   width: 30%;
 }
 
-.form>h4{
+.form > h4 {
   text-align: center;
   font-size: 20px;
 }
 
-.inputholder{
+.inputholder {
   display: flex;
   flex-direction: column;
   margin: 20px 0 5px 0;
 }
 
-.inputholder>input{
+.inputholder > input {
   border: none;
   outline: none;
   background-color: whitesmoke;
   padding: 10px;
 }
 
-.inputholder>button{
+.inputholder > button {
   background-color: var(--primary-color);
   color: white;
   border: none;
@@ -494,7 +518,7 @@ border-radius: 5px;
   padding: 15px 0;
 }
 
-.contact{
+.contact {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -502,7 +526,7 @@ border-radius: 5px;
   padding: 40px;
 }
 
-.contact-end>button{
+.contact-end > button {
   background-color: var(--primary-color);
   border-radius: 5px;
   color: white;
@@ -513,48 +537,44 @@ border-radius: 5px;
 
 /* Footer styling */
 
-footer{
+footer {
   background-color: white;
   padding: 20px;
   font-size: 16px;
   font-weight: 300;
 }
 
-
-.footer-top{
+.footer-top {
   display: flex;
   justify-content: space-around;
   margin: 20px 0px 0px 10px;
   flex-wrap: wrap;
-  
 }
 
-.get-intouch{
+.get-intouch {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
 
-
-.icons-intouch{
+.icons-intouch {
   display: flex;
   align-items: center;
 }
 
-.footer-title{
+.footer-title {
   font-size: 18px;
   font-weight: 500;
 }
 
-.footer-bottom{
+.footer-bottom {
   display: flex;
   justify-content: space-between;
   padding: 0 50px;
   margin-top: 15px;
 }
 
-
-.list{
+.list {
   margin-top: 10px;
   margin-bottom: 15px;
   list-style: none;
@@ -563,7 +583,5 @@ footer{
   gap: 8px;
 }
 
-
-@media screen and (max-width="375"){
-
-};
+@media screen and (max-width="375") {
+}
