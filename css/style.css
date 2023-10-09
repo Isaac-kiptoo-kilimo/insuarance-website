@@ -215,8 +215,9 @@ header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(1, 1fr);
-  grid-template-areas: 'firstc secondc thirdc'
-  'firstc secondc thirdc';
+  grid-template-areas:
+    "firstc secondc thirdc"
+    "firstc secondc thirdc";
   gap: 50px;
   margin-top: 10px;
   padding: 20px;
@@ -240,7 +241,6 @@ header {
   padding: 40px 20px;
 }
 
-
 .second-review > p {
   /* text-align: center; */
   margin: 30px 0;
@@ -257,7 +257,7 @@ header {
   /* text-align: center; */
   margin: 30px 0;
 }
-.img-vectors{
+.img-vectors {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -265,27 +265,146 @@ header {
   margin: 10px;
   padding: 20px;
 }
-.subscribe-main{
+.subscribe-main {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 20px 5px;
 }
-.subscribe{
-  background-color: pink;
+.subscribe {
+  background: #c33764;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #1d2671, #c33764);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #1d2671, #c33764);
   padding: 20px;
   display: flex;
   justify-content: space-between;
   width: 70%;
 }
-.subscribe-input{
+.subscribe-input {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.subscribe-input>input{
-  padding: 10px;
+.subscribe-input > input {
+  padding: 15px 30px;
   border-radius: 5px 0 0 5px;
-  border: 2px solid grey;
+  /* border: 2px solid grey; */
   outline: none;
+}
+
+.subscribe-input > h6 {
+  background: var(--primary-color);
+  padding: 17px 20px;
+  border-radius: 0 5px 5px 0;
+  /* outline: 1px solid white; */
+  color: white;
+}
+
+.subscribe > h4 {
+  font-size: 22px;
+  font-weight: 600;
+  color: white;
+}
+
+.pricing {
+  text-align: center;
+  margin: 20px;
+  padding: 10px;
+}
+.pricing > h2 {
+  margin: 15px 0;
+  font-weight: 500;
+}
+
+.offers{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+}
+.free,.standard,.premium{
+  border: 1px solid var(--primary-color);
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  height: 500px;
+  padding: 20px;
+  border-radius: 5px;
+  /* font-size: 20px; */
+}
+.superscript {
+  /* vertical-align: super; */
+  font-size: 15px;
+  font-weight: 300;
+}
+.amount{
+  color: var(--primary-color);
+}
+
+.amount>h2{
+  font-size: 40px;
+  font-weight: 500;
+}
+.subscript {
+  /* vertical-align: sub; */
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.free>p{
+  font-size: 15px;
+}
+.free>button{
+width: 100%;
+background-color: var(--primary-color);
+color: white;
+padding: 10px;
+border: none;
+outline: none;
+border-radius: 5px;
+}
+
+
+  .premium>button{
+    width: 100%;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    }
+.package>p{
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+.standard{
+  background-color: #252B42;
+  color: white;
+  padding: 20px;
+  height: 550px;
+}
+
+.standard>p{
+  font-size: 15px;
+}
+.standard>button{
+  width: 100%;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  }
+
+.premium>p{
+  font-size: 15px;
 }
