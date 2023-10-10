@@ -12,29 +12,36 @@
 
 body {
   font-family: "Montserrat";
-  background-color: #f0f0f0;
+  /* background-color: #f0f0f0; */
+  background-color: yellow;
+  /* width: 100vw; */
+  /* overflow-x: hidden; */
 }
 
 .main {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-
+  background-color: green;
   width: 100%;
 }
-
-header {
+.hero{
   width: 100%;
-  height: 500px;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../images/hero.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  }
+header {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  width: 100%;
+  height: 70vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+   url("../images/hero.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-color: red; */
+  /* padding: 20px; */
   /* position: relative; */
 }
 
@@ -50,7 +57,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1;
+  /* z-index: 1; */
   background-color: transparent;
   font-weight: 300;
 }
@@ -58,13 +65,15 @@ header {
 .navbar > h2 {
   font-size: 16px;
   font-weight: 500;
+  /* width: 100%; */
 }
 
 .navbar > ul {
+  /* width: 100%; */
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 30px;
+  /* gap: 30px; */
   list-style: none;
   font-size: 14px;
 }
@@ -73,7 +82,7 @@ header {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 30px;
+  /* gap: 30px; */
   /* font-weight: 300; */
 }
 .nav-end > h5 {
@@ -86,11 +95,13 @@ header {
   border-radius: 5px;
 }
 .hero-content {
-  width: 50%;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
+  width: 50%;
+  /* background-color: yellow; */
+  /* text-align: center; */
   flex-wrap: wrap;
 }
 .hero-content > h1 {
@@ -106,14 +117,18 @@ header {
   text-align: center;
   color: white;
   margin: 20px 0;
+  flex-wrap: wrap;
 }
 
 .hero-btn {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
   margin-top: 30px;
+  width: 100%;
+  /* background-color: yellow; */
 }
 .hero-btn > button {
   background: var(--primary-color);
@@ -142,6 +157,7 @@ header {
   width: 100%;
   padding-bottom: 50px;
   gap: 40px;
+  
 }
 
 /* start of dummy css */
@@ -159,7 +175,6 @@ header {
   transition: opacity;
 }
 
-
 .hover-image {
   position: absolute;
   top: 0;
@@ -167,7 +182,6 @@ header {
   opacity: 0;
   transition: opacity;
 }
-
 
 .user-card:hover .hover-image {
   opacity: 1;
@@ -182,46 +196,20 @@ header {
 .user-card:hover .default-image {
   opacity: 0;
 }
-/* end of dummy css */
 
-.peace-img2 {
-  display: none;
-}
 
-.peace-card > img {
-  margin: 0 30px;
-}
-
-.peace-card > h2 {
-  margin: 20px 20px 20px 0;
-}
-
-.life-card > img {
-  margin: 0 30px;
-}
-.life-card > h2 {
-  margin: 20px 20px 20px 0;
-}
-
-.satisfaction-card > img {
-  margin: 0 30px;
-  /* background-color: #23a6f0; */
-}
-.satisfaction-card > h2 {
-  margin: 20px 20px 20px 0;
-}
 
 .icons-cards {
   /* padding-top: 40px; */
   display: flex;
-  background-color: white;
-  width: 100%;
-  height: 400px;
-
-  gap: 40px;
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
+  background-color: white;
+  width: 100%;
+  height: 400px;
+  gap: 40px;
+  
 }
 
 .recordbook-card {
@@ -244,13 +232,15 @@ header {
   width: 350px;
   text-align: center;
 }
-.industry {
+.industry-top {
   display: flex;
+  align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
-  width: 100vw;
+  width: 100%;
   text-align: center;
   padding: 50px 0;
+  
 }
 .industry > h2 {
   margin: 20px 0;
@@ -258,19 +248,22 @@ header {
 
 .review-row {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  width: 100vw;
+  width: 100%;
+  
 }
 
 .reviews {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  /* grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(1, 1fr);
   grid-template-areas:
     "firstc secondc thirdc"
-    "firstc secondc thirdc";
-  gap: 40px;
+    "firstc secondc thirdc"; */
+  gap: 60px;
   margin-top: 10px;
   padding: 20px;
   flex-wrap: wrap;
@@ -316,31 +309,38 @@ header {
   justify-content: center;
   flex-wrap: wrap;
   gap: 90px;
-  margin: 10px;
   padding: 20px;
-  width: 100vw;
+  width: 100%;
+  
 }
 .subscribe-main {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px 5px;
+  width: 100%;
+  flex-wrap: wrap;
+  /* margin: 20px 5px; */
+  
 }
 .subscribe {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   background: #c33764;
   /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #1d2671, #c33764);
   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #1d2671, #c33764);
   padding: 20px;
-  display: flex;
-  justify-content: space-between;
+
   width: 70%;
 }
 .subscribe-input {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  width: 40%;
 }
 .subscribe-input > input {
   padding: 15px 30px;
@@ -363,21 +363,33 @@ header {
 }
 
 .pricing {
-  text-align: center;
-  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  /* margin: 20px; */
   padding: 10px;
+  flex-wrap: wrap;
+  
+  
 }
 .pricing > h2 {
   margin: 15px 0;
   font-weight: 500;
+}
+.pricing > p {
+  text-align: center;
 }
 
 .offers {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px;
+  width: 100%;
+  flex-wrap: wrap;
+  
   padding: 20px;
+  
 }
 .free,
 .standard,
@@ -465,9 +477,12 @@ header {
   display: flex;
   justify-content: center;
   padding-top: 70px;
+  width: 100%;
   background-color: rgb(37, 43, 66);
   color: white;
   height: 550px;
+  flex-wrap: wrap;
+  /* margin: 20px; */
 }
 .map-location > h2 {
   margin-bottom: 20px;
@@ -482,7 +497,9 @@ header {
 .appointment {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   margin-top: -200px;
+  width: 100%;
 }
 
 .form {
@@ -498,8 +515,10 @@ header {
 
 .inputholder {
   display: flex;
+  justify-content: center;
   flex-direction: column;
   margin: 20px 0 5px 0;
+  flex-wrap: wrap;
 }
 
 .inputholder > input {
@@ -507,6 +526,7 @@ header {
   outline: none;
   background-color: whitesmoke;
   padding: 10px;
+  width: 90%;
 }
 
 .inputholder > button {
@@ -516,14 +536,18 @@ header {
   outline: none;
   border-radius: 5px;
   padding: 15px 0;
+  
 }
 
 .contact {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 40px;
+  width: 100%;
+  /* margin: 40px; */
   padding: 40px;
+  
+  
 }
 
 .contact-end > button {
@@ -532,6 +556,7 @@ header {
   color: white;
   padding: 10px 15px;
   border: none;
+  
   outline: none;
 }
 
@@ -542,45 +567,60 @@ footer {
   padding: 20px;
   font-size: 16px;
   font-weight: 300;
+  width: 100%;
+  
+  /* margin: 10px 10px; */
 }
 
 .footer-top {
   display: flex;
   justify-content: space-around;
-  margin: 20px 0px 0px 10px;
+  width: 100%;
+  /* margin: 20px 10px 20px 10px; */
+  padding: 0 20px 0 0;
   flex-wrap: wrap;
+  
+  
 }
 
 .get-intouch {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   gap: 8px;
+  
 }
 
 .icons-intouch {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  
 }
 
 .footer-title {
   font-size: 18px;
   font-weight: 500;
+  
 }
 
 .footer-bottom {
   display: flex;
   justify-content: space-between;
-  padding: 0 50px;
+  /* padding: 0 50px; */
   margin-top: 15px;
+  
 }
 
 .list {
+  display: flex;
   margin-top: 10px;
   margin-bottom: 15px;
   list-style: none;
-  display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   gap: 8px;
+  
 }
 
 @media screen and (max-width="375") {
