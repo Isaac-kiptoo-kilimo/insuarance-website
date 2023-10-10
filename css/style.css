@@ -13,7 +13,7 @@
 body {
   font-family: "Montserrat";
   background-color: #f0f0f0;
- }
+}
 
 .main {
   display: flex;
@@ -21,9 +21,9 @@ body {
   flex-wrap: wrap;
   width: 100%;
 }
-.hero{
+.hero {
   width: 100%;
-  }
+}
 header {
   display: flex;
   justify-content: center;
@@ -31,8 +31,8 @@ header {
   flex-wrap: wrap;
   width: 100%;
   height: 70vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
-   url("../images/hero.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../images/hero.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -61,7 +61,6 @@ header {
 .navbar > h2 {
   font-size: 16px;
   font-weight: 500;
-  
 }
 
 .navbar > ul {
@@ -153,7 +152,6 @@ header {
   width: 100%;
   padding-bottom: 50px;
   gap: 40px;
-  
 }
 
 /* start of dummy css */
@@ -193,8 +191,6 @@ header {
   opacity: 0;
 }
 
-
-
 .icons-cards {
   /* padding-top: 40px; */
   display: flex;
@@ -205,7 +201,6 @@ header {
   width: 100%;
   height: 400px;
   gap: 40px;
-  
 }
 
 .recordbook-card {
@@ -236,7 +231,6 @@ header {
   width: 100%;
   text-align: center;
   padding: 50px 0;
-  
 }
 .industry > h2 {
   margin: 20px 0;
@@ -247,7 +241,6 @@ header {
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
-  
 }
 
 .reviews {
@@ -307,7 +300,6 @@ header {
   gap: 90px;
   padding: 20px;
   width: 100%;
-  
 }
 .subscribe-main {
   display: flex;
@@ -316,7 +308,6 @@ header {
   width: 100%;
   flex-wrap: wrap;
   /* margin: 20px 5px; */
-  
 }
 .subscribe {
   display: flex;
@@ -366,8 +357,6 @@ header {
   /* margin: 20px; */
   padding: 10px;
   flex-wrap: wrap;
-  
-  
 }
 .pricing > h2 {
   margin: 15px 0;
@@ -383,9 +372,8 @@ header {
   align-items: center;
   width: 100%;
   flex-wrap: wrap;
-  
+
   padding: 20px;
-  
 }
 .free,
 .standard,
@@ -402,7 +390,7 @@ header {
   border-radius: 5px;
 }
 
-.free:hover{
+.free:hover {
   background-color: #252b42;
   color: white;
   padding: 20px;
@@ -545,7 +533,6 @@ header {
   outline: none;
   border-radius: 5px;
   padding: 15px 0;
-  
 }
 
 .contact {
@@ -555,8 +542,6 @@ header {
   width: 100%;
   /* margin: 40px; */
   padding: 40px;
-  
-  
 }
 
 .contact-end > button {
@@ -565,7 +550,7 @@ header {
   color: white;
   padding: 10px 15px;
   border: none;
-  
+
   outline: none;
 }
 
@@ -577,7 +562,7 @@ footer {
   font-size: 16px;
   font-weight: 300;
   width: 100%;
-  
+
   /* margin: 10px 10px; */
 }
 
@@ -588,8 +573,6 @@ footer {
   /* margin: 20px 10px 20px 10px; */
   padding: 0 20px 0 0;
   flex-wrap: wrap;
-  
-  
 }
 
 .get-intouch {
@@ -597,20 +580,17 @@ footer {
   flex-direction: column;
   flex-wrap: wrap;
   gap: 8px;
-  
 }
 
 .icons-intouch {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  
 }
 
 .footer-title {
   font-size: 18px;
   font-weight: 500;
-  
 }
 
 .footer-bottom {
@@ -618,7 +598,6 @@ footer {
   justify-content: space-between;
   /* padding: 0 50px; */
   margin-top: 15px;
-  
 }
 
 .list {
@@ -629,341 +608,163 @@ footer {
   flex-wrap: wrap;
   flex-direction: column;
   gap: 8px;
-  
 }
 @media screen and (max-width: 600px) {
-
-  .navbar{
-  
-  }
   .main {
-  font-size: 14px;
+    font-size: 14px;
   }
-  .hero{
+  .hero {
     font-size: 15px;
-    }
-  header {
-  
   }
-  
+
   .navbar {
-   margin: 0;
-   display: flex;
-   flex-direction: row;
-   width: 100vw;
-   gap: 10px;
-   /* background-color: #1d2671; */
-   height: 10vh;
-   font-size: 18px;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    gap: 10px;
+    height: 10vh;
+    font-size: 18px;
+    /* background-color: rgb(225, 204, 204); */
   }
-  
+
   .navbar > h2 {
-   /* background-color: yellow; */
-   width: 100vw;
-   margin: 5px 20px;
-   
-    
+    width: 100vw;
+    margin: 5px 20px;
   }
-  
+
   .navbar > ul {
-    
     flex-direction: row;
     align-items: center;
     justify-content: center;
-  gap: 40px;
-  /* background-color: green; */
-  width: 100vw;
-  /* font-size: 15px; */
+    gap: 40px;
+
+    width: 100vw;
   }
 
-  
   .nav-end {
     gap: 50px;
     width: 100vw;
     margin-left: 20px;
-   
   }
-  .nav-end > h5 {
-    
-  }
-  .member-btn {
 
+  .member-btn {
     padding: 5px;
   }
-  .hero-content {
-  
-  }
+
   .hero-content > h1 {
     font-size: 20px;
-    
   }
   .hero-content > p {
-  margin: 10px 0;
+    margin: 10px 0;
   }
-  
+
   .hero-btn {
-gap: 10px;
+    gap: 10px;
   }
-  .hero-btn > button {
-   
-  }
-  
-  .hero-btn > p {
-   
-  }
-  
-  .top-cards {
-   
-    
-  }
-  
-   
- 
+
   .icons-cards {
     gap: 0px;
     height: 100vh;
-    font-size: 18px;  
-    
+    font-size: 18px;
   }
-  
+
   .recordbook-card {
     margin: 0;
     padding: 5px;
     gap: 0;
     width: 90vw;
-
   }
-  
+
   .bookmark-card {
     margin: 0;
     padding: 5px;
     width: 90vw;
-    
   }
-  
+
   .user-iconcard {
     font-size: 18px;
     margin: 0;
     padding: 5px;
     width: 90vw;
- 
   }
   .industry-top {
     width: 90vw;
-    
   }
-  .industry > h2 {
-   
-  }
-  
-  .review-row {
- 
-    
-  }
-  
-  .reviews {
- 
-  }
-  
+
   .first-review {
-   width: 100vw;
+    width: 100vw;
   }
-  .first-review > p {
-    
-  }
-  
+
   .second-review {
-   width: 100vw;
+    width: 100vw;
   }
-  
-  .second-review > p {
-   
-  }
-  
+
   .third-review {
     width: 100vw;
   }
-  
-  .third-review > p {
-    
-  }
-  .img-vectors {
-   
-    
-  }
-  .subscribe-main {
-  
-    
-  }
-  .subscribe {
-   
-  }
-  .subscribe-input {
-    
-  }
-  .subscribe-input > input {
-   
-  }
-  
-  .subscribe-input > h6 {
-  
-  }
-  
-  .subscribe > h4 {
-   
-  }
-  
-  .pricing {
-   
-    
-  }
-  .pricing > h2 {
-   
-  }
-  .pricing > p {
-   
-  }
-  
-  .offers {
-   
-  }
-  .free {
-    
-  }
-  
-  .free:hover{
-    
-  }
-  
-  .superscript {
-    
-  }
-  .amount {
-   
-  }
-  
-  .amount > h2 {
-   
-  }
-  .subscript {
-   
-  }
-  
-  .free > p {
-    
-  }
-  .free > button {
- 
-  }
-  
-  .premium > button {
-   
-  }
-  .package > p {
-   
-  }
-  .standard {
-   
-  }
-  
-  .standard > p {
-   
-  }
-  .standard > button {
-  
-  }
 
-  
   .map {
     padding: 20px;
     width: 90vw;
     margin-left: 20px;
-    
   }
   .map-location > h2 {
     font-size: 18px;
-   
   }
-  .img-map>img{
+  .img-map > img {
     width: 300px;
   }
-  .map-location > p {
-    
-  }
-  
+
   .appointment {
-   margin-top: 10px;
+    margin-top: 10px;
   }
-  .img-appointment>img{
+  .img-appointment > img {
     width: 90vw;
   }
   .form {
-  width: 90vw;
-  margin: 15px;
-  /* background-color: yellow; */
+    width: 90vw;
+    margin: 15px;
+    /* background-color: yellow; */
   }
-  
 
-  
-  .contact {
-  
-    
-    
-  }
-  
-  .contact-end > button {
-    
-  }
-  
-  /* Footer styling */
-  
-  footer {
-  
-  }
-  
   .footer-top {
     display: flex;
-    justify-content: space-around;
+    /* text-align: center; */
+    gap: 30px;
+    /* justify-content: space-around; */
     width: 100%;
-    padding: 0 20px 0 0;
+    /* padding: 0 20px 0 0; */
     flex-wrap: wrap;
-    
-    
+    font-size: 18px;
   }
-  
+  .info-title > h4 {
+    font-size: 19px;
+    text-align: center;
+  }
   .get-intouch {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    gap: 8px;
-    
+    /* gap: 8px; */
   }
-  
+
   .icons-intouch {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    
   }
-  
+
   .footer-title {
     font-size: 10px;
     font-weight: 500;
-    
   }
-  
-   .footer-bottom {
-    flex-direction: column;   
+
+  .footer-bottom {
+    flex-direction: column;
     margin-top: 15px;
-    
-  } 
-  
-  .list {
-    /* display: flex; */
-    /* margin-top: 10px;
-    margin-bottom: 15px; */
-    /* flex-direction: column; */
-    gap: 8px;
-    
+  }
+  .user-card{
+    font-size: 16px;
   }
 }
