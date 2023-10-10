@@ -632,11 +632,7 @@ footer {
   
 }
 @media screen and (max-width: 600px) {
-  body {
-    /* background-color: rgb(230, 173, 200); */
-    /* width: 100vw; */
-    /* overflow-x: hidden; */
-  }
+
   .navbar{
   
   }
@@ -651,40 +647,62 @@ footer {
   }
   
   .navbar {
-   
+   margin: 0;
+   display: flex;
+   flex-direction: row;
+   width: 100vw;
+   gap: 10px;
+   /* background-color: #1d2671; */
+   height: 10vh;
+   font-size: 18px;
   }
   
   .navbar > h2 {
+   /* background-color: yellow; */
+   width: 100vw;
+   margin: 5px 20px;
    
     
   }
   
   .navbar > ul {
-  
+    
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  gap: 40px;
+  /* background-color: green; */
+  width: 100vw;
+  /* font-size: 15px; */
   }
+
   
   .nav-end {
+    gap: 50px;
+    width: 100vw;
+    margin-left: 20px;
    
   }
   .nav-end > h5 {
     
   }
   .member-btn {
- 
+
+    padding: 5px;
   }
   .hero-content {
   
   }
   .hero-content > h1 {
-    font-size: 18px;
+    font-size: 20px;
     
   }
   .hero-content > p {
-  
+  margin: 10px 0;
   }
   
   .hero-btn {
-/
+gap: 10px;
   }
   .hero-btn > button {
    
@@ -699,36 +717,12 @@ footer {
     
   }
   
+   
  
-  
-  .user-card {
-    
-  }
-  
-  .default-image {
-   
-  }
-  
-  .hover-image {
-   
-  }
-  
-  .user-card:hover .hover-image {
- 
-  }
-  
-  .user-card:hover .default-image {
-   
-  }
-  
-  
-  
   .icons-cards {
     gap: 0px;
-    /* background-color: #c33764; */
     height: 100vh;
-  
-    
+    font-size: 18px;  
     
   }
   
@@ -736,24 +730,26 @@ footer {
     margin: 0;
     padding: 5px;
     gap: 0;
-  /* width: 50%; */
-  /* background-color: yellow; */
+    width: 90vw;
 
   }
   
   .bookmark-card {
     margin: 0;
     padding: 5px;
+    width: 90vw;
     
   }
   
   .user-iconcard {
+    font-size: 18px;
     margin: 0;
-    padding: 0;
+    padding: 5px;
+    width: 90vw;
  
   }
   .industry-top {
-    
+    width: 90vw;
     
   }
   .industry > h2 {
@@ -770,14 +766,14 @@ footer {
   }
   
   .first-review {
-   
+   width: 100vw;
   }
   .first-review > p {
     
   }
   
   .second-review {
-   
+   width: 100vw;
   }
   
   .second-review > p {
@@ -785,7 +781,7 @@ footer {
   }
   
   .third-review {
-   
+    width: 100vw;
   }
   
   .third-review > p {
@@ -879,8 +875,9 @@ footer {
 
   
   .map {
-    background-color: green;
     padding: 20px;
+    width: 90vw;
+    margin-left: 20px;
     
   }
   .map-location > h2 {
@@ -897,27 +894,16 @@ footer {
   .appointment {
    margin-top: 10px;
   }
-  
+  .img-appointment>img{
+    width: 90vw;
+  }
   .form {
-  
+  width: 90vw;
+  margin: 15px;
+  /* background-color: yellow; */
   }
   
-  .form > h4 {
-    
-  }
-  
-  .inputholder {
-   
-  }
-  
-  .inputholder > input {
-   
-  }
-  
-  .inputholder > button {
-  
-    
-  }
+
   
   .contact {
   
@@ -939,10 +925,8 @@ footer {
     display: flex;
     justify-content: space-around;
     width: 100%;
-    /* margin: 20px 10px 20px 10px; */
     padding: 0 20px 0 0;
     flex-wrap: wrap;
-    background-color: green;
     
     
   }
@@ -969,7 +953,6 @@ footer {
   }
   
    .footer-bottom {
-    background-color: yellow;
     flex-direction: column;   
     margin-top: 15px;
     
