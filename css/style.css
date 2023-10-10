@@ -12,17 +12,13 @@
 
 body {
   font-family: "Montserrat";
-  /* background-color: #f0f0f0; */
-  background-color: yellow;
-  /* width: 100vw; */
-  /* overflow-x: hidden; */
-}
+  background-color: #f0f0f0;
+ }
 
 .main {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  background-color: green;
   width: 100%;
 }
 .hero{
@@ -65,15 +61,15 @@ header {
 .navbar > h2 {
   font-size: 16px;
   font-weight: 500;
-  /* width: 100%; */
+  
 }
 
 .navbar > ul {
-  /* width: 100%; */
+  width: 30%;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  /* gap: 30px; */
+  gap: 30px;
   list-style: none;
   font-size: 14px;
 }
@@ -82,8 +78,8 @@ header {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  /* gap: 30px; */
-  /* font-weight: 300; */
+  gap: 30px;
+  font-weight: 300;
 }
 .nav-end > h5 {
   font-weight: 300;
@@ -332,17 +328,17 @@ header {
   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #1d2671, #c33764);
   padding: 20px;
-
-  width: 70%;
+  width: 80%;
 }
 .subscribe-input {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  width: 40%;
+  /* flex-wrap: wrap; */
+  /* width: 100%; */
 }
 .subscribe-input > input {
+  width: 100%;
   padding: 15px 30px;
   border-radius: 5px 0 0 5px;
   /* border: 2px solid grey; */
@@ -405,6 +401,15 @@ header {
   padding: 20px;
   border-radius: 5px;
 }
+
+.free:hover{
+  background-color: #252b42;
+  color: white;
+  padding: 20px;
+  height: 550px;
+  cursor: pointer;
+}
+
 .superscript {
   font-size: 15px;
   font-weight: 300;
@@ -476,11 +481,12 @@ header {
 .map {
   display: flex;
   justify-content: center;
+  /* flex-direction: row; */
   padding-top: 70px;
   width: 100%;
   background-color: rgb(37, 43, 66);
   color: white;
-  height: 550px;
+  height: 80vh;
   flex-wrap: wrap;
   /* margin: 20px; */
 }
@@ -503,9 +509,12 @@ header {
 }
 
 .form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   background-color: white;
   padding: 20px 20px 0px 20px;
-  width: 30%;
+  width: 100%;
 }
 
 .form > h4 {
@@ -622,6 +631,356 @@ footer {
   gap: 8px;
   
 }
+@media screen and (max-width: 600px) {
+  body {
+    /* background-color: rgb(230, 173, 200); */
+    /* width: 100vw; */
+    /* overflow-x: hidden; */
+  }
+  .navbar{
+  
+  }
+  .main {
+  font-size: 14px;
+  }
+  .hero{
+    font-size: 15px;
+    }
+  header {
+  
+  }
+  
+  .navbar {
+   
+  }
+  
+  .navbar > h2 {
+   
+    
+  }
+  
+  .navbar > ul {
+  
+  }
+  
+  .nav-end {
+   
+  }
+  .nav-end > h5 {
+    
+  }
+  .member-btn {
+ 
+  }
+  .hero-content {
+  
+  }
+  .hero-content > h1 {
+    font-size: 18px;
+    
+  }
+  .hero-content > p {
+  
+  }
+  
+  .hero-btn {
+/
+  }
+  .hero-btn > button {
+   
+  }
+  
+  .hero-btn > p {
+   
+  }
+  
+  .top-cards {
+   
+    
+  }
+  
+ 
+  
+  .user-card {
+    
+  }
+  
+  .default-image {
+   
+  }
+  
+  .hover-image {
+   
+  }
+  
+  .user-card:hover .hover-image {
+ 
+  }
+  
+  .user-card:hover .default-image {
+   
+  }
+  
+  
+  
+  .icons-cards {
+    gap: 0px;
+    /* background-color: #c33764; */
+    height: 100vh;
+  
+    
+    
+  }
+  
+  .recordbook-card {
+    margin: 0;
+    padding: 5px;
+    gap: 0;
+  /* width: 50%; */
+  /* background-color: yellow; */
 
-@media screen and (max-width="375") {
+  }
+  
+  .bookmark-card {
+    margin: 0;
+    padding: 5px;
+    
+  }
+  
+  .user-iconcard {
+    margin: 0;
+    padding: 0;
+ 
+  }
+  .industry-top {
+    
+    
+  }
+  .industry > h2 {
+   
+  }
+  
+  .review-row {
+ 
+    
+  }
+  
+  .reviews {
+ 
+  }
+  
+  .first-review {
+   
+  }
+  .first-review > p {
+    
+  }
+  
+  .second-review {
+   
+  }
+  
+  .second-review > p {
+   
+  }
+  
+  .third-review {
+   
+  }
+  
+  .third-review > p {
+    
+  }
+  .img-vectors {
+   
+    
+  }
+  .subscribe-main {
+  
+    
+  }
+  .subscribe {
+   
+  }
+  .subscribe-input {
+    
+  }
+  .subscribe-input > input {
+   
+  }
+  
+  .subscribe-input > h6 {
+  
+  }
+  
+  .subscribe > h4 {
+   
+  }
+  
+  .pricing {
+   
+    
+  }
+  .pricing > h2 {
+   
+  }
+  .pricing > p {
+   
+  }
+  
+  .offers {
+   
+  }
+  .free {
+    
+  }
+  
+  .free:hover{
+    
+  }
+  
+  .superscript {
+    
+  }
+  .amount {
+   
+  }
+  
+  .amount > h2 {
+   
+  }
+  .subscript {
+   
+  }
+  
+  .free > p {
+    
+  }
+  .free > button {
+ 
+  }
+  
+  .premium > button {
+   
+  }
+  .package > p {
+   
+  }
+  .standard {
+   
+  }
+  
+  .standard > p {
+   
+  }
+  .standard > button {
+  
+  }
+
+  
+  .map {
+    background-color: green;
+    padding: 20px;
+    
+  }
+  .map-location > h2 {
+    font-size: 18px;
+   
+  }
+  .img-map>img{
+    width: 300px;
+  }
+  .map-location > p {
+    
+  }
+  
+  .appointment {
+   margin-top: 10px;
+  }
+  
+  .form {
+  
+  }
+  
+  .form > h4 {
+    
+  }
+  
+  .inputholder {
+   
+  }
+  
+  .inputholder > input {
+   
+  }
+  
+  .inputholder > button {
+  
+    
+  }
+  
+  .contact {
+  
+    
+    
+  }
+  
+  .contact-end > button {
+    
+  }
+  
+  /* Footer styling */
+  
+  footer {
+  
+  }
+  
+  .footer-top {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    /* margin: 20px 10px 20px 10px; */
+    padding: 0 20px 0 0;
+    flex-wrap: wrap;
+    background-color: green;
+    
+    
+  }
+  
+  .get-intouch {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 8px;
+    
+  }
+  
+  .icons-intouch {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    
+  }
+  
+  .footer-title {
+    font-size: 10px;
+    font-weight: 500;
+    
+  }
+  
+   .footer-bottom {
+    background-color: yellow;
+    flex-direction: column;   
+    margin-top: 15px;
+    
+  } 
+  
+  .list {
+    /* display: flex; */
+    /* margin-top: 10px;
+    margin-bottom: 15px; */
+    /* flex-direction: column; */
+    gap: 8px;
+    
+  }
 }
