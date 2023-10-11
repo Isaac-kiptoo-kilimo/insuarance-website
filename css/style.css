@@ -747,8 +747,8 @@ footer {
   }
 
   .footer-top {
-    display: flex;
-    background-color: #23a6f0;
+    /* display: flex; */
+    /* background-color: #23a6f0; */
     /* text-align: center; */
     gap: 30px;
     width: 100%;
@@ -761,19 +761,19 @@ footer {
     font-size: 19px;
     text-align: center;
   }
-  .get-intouch {
+  /* .get-intouch {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
     /* gap: 8px; */
-  }
+  /* } */
 
-  .icons-intouch {
+  /* .icons-intouch {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
-  }
+  } */
 
   .footer-title {
     font-size: 18px;
@@ -783,6 +783,12 @@ footer {
   .footer-bottom {
     flex-direction: column;
     margin-top: 15px;
+    padding: 20px;
+    gap: 10px;
+  }
+  .footer-bootom-right{
+    display: flex;
+    justify-content: space-around;
   }
   .user-card{
     font-size: 16px;
