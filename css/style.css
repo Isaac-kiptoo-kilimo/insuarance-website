@@ -30,7 +30,8 @@ header {
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
-  height: 70vh;
+  /* added min height */
+  min-height: 70vh;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("../images/hero.png");
   background-position: center;
@@ -44,33 +45,42 @@ header {
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  /* justify-content: space-between; */
   flex-wrap: wrap;
   color: white;
-  height: 60px;
+  min-height: 60px;
   width: 100%;
+  padding: 10px;
   /* max-width: 100%; */
   position: fixed;
   top: 0;
   left: 0;
-  /* z-index: 1; */
-  background-color: transparent;
+  z-index: 1;
+  /* background-color: transparent; */
+  background-color: rgba(0, 0, 0, 0.3);;
   font-weight: 300;
 }
-
-.navbar > h2 {
+.nav-start{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 70%;
+}
+.nav-start > h2 {
   font-size: 16px;
   font-weight: 500;
 }
-
-.navbar > ul {
-  width: 30%;
+.d-none{
+  display: none;
+}
+.nav-start > ul {
+  width: 50%;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   gap: 30px;
   list-style: none;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .nav-end {
@@ -182,7 +192,7 @@ header {
   color: white;
   background: var(--primary-color);
   padding: 37px 40px;
-  width: 350px;
+  width: 100%;
   box-shadow: 0 15px 35px #aaaaaa40;
   cursor: pointer;
 }
@@ -199,7 +209,7 @@ header {
   align-items: center;
   background-color: white;
   width: 100%;
-  height: 400px;
+  min-height: 400px;
   gap: 40px;
 }
 
@@ -372,9 +382,10 @@ header {
   align-items: center;
   width: 100%;
   flex-wrap: wrap;
-
+  min-height: 100vh;
   padding: 20px;
 }
+
 .free,
 .standard,
 .premium {
@@ -469,14 +480,12 @@ header {
 .map {
   display: flex;
   justify-content: center;
-  /* flex-direction: row; */
   padding-top: 70px;
   width: 100%;
   background-color: rgb(37, 43, 66);
   color: white;
   height: 80vh;
   flex-wrap: wrap;
-  /* margin: 20px; */
 }
 .map-location > h2 {
   margin-bottom: 20px;
@@ -541,7 +550,7 @@ header {
   align-items: center;
   width: 100%;
   /* margin: 40px; */
-  padding: 40px;
+  padding: 60px;
 }
 
 .contact-end > button {
@@ -609,27 +618,40 @@ footer {
   flex-direction: column;
   gap: 8px;
 }
-@media screen and (max-width: 600px) {
+
+
+
+@media screen and (max-width: 768px) {
+  /* body{
+    background-color: yellow;
+  } */
   .main {
     font-size: 14px;
   }
   .hero {
     font-size: 15px;
+    
   }
-
+ 
   .navbar {
     margin: 0;
-    display: flex;
+    justify-content: center;
     flex-direction: row;
-    width: 100vw;
-    gap: 10px;
-    height: 10vh;
+    flex-wrap: wrap;
+    height: 15vh;
     font-size: 18px;
-    /* background-color: rgb(225, 204, 204); */
+  }
+
+  .nav-start > ul{
+    display: none;
+  }
+
+  .d-none{
+    display: block;
   }
 
   .navbar > h2 {
-    width: 100vw;
+    width: 70vw;
     margin: 5px 20px;
   }
 
@@ -637,21 +659,18 @@ footer {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 40px;
+    flex-wrap: wrap;
 
-    width: 100vw;
   }
 
-  .nav-end {
-    gap: 50px;
-    width: 100vw;
-    margin-left: 20px;
-  }
+
 
   .member-btn {
     padding: 5px;
   }
-
+.member-btn>p{
+  font-size: 12px;
+}
   .hero-content > h1 {
     font-size: 20px;
   }
@@ -665,7 +684,6 @@ footer {
 
   .icons-cards {
     gap: 0px;
-    height: 100vh;
     font-size: 18px;
   }
 
@@ -730,14 +748,15 @@ footer {
 
   .footer-top {
     display: flex;
+    background-color: #23a6f0;
     /* text-align: center; */
     gap: 30px;
-    /* justify-content: space-around; */
     width: 100%;
     /* padding: 0 20px 0 0; */
     flex-wrap: wrap;
     font-size: 18px;
   }
+
   .info-title > h4 {
     font-size: 19px;
     text-align: center;
@@ -753,10 +772,11 @@ footer {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    flex-direction: column;
   }
 
   .footer-title {
-    font-size: 10px;
+    font-size: 18px;
     font-weight: 500;
   }
 
@@ -766,5 +786,26 @@ footer {
   }
   .user-card{
     font-size: 16px;
+  }
+}
+
+@media screen and (max-width:350px){
+
+  .main{
+    /* overflow-x: hidden; */
+  }
+  .map {
+    padding: 20px;
+    margin-left: 20px;
+  }
+  .img-map > img {
+    width: 200px;
+  }
+  .nav-end{
+    flex-direction: column;
+  }
+  .hero-btn>button,.hero-btn>p{
+    font-size: 10px;
+    padding: 5px;
   }
 }
